@@ -1,0 +1,18 @@
+extends layout
+
+block content
+    h2.heading= video.title
+    
+    .row
+      // Video Player Start
+      .col-lg-12.col-md-12.col-sm-12.col-xs-12.playershadow
+        video#example_video_1.video-js.vjs-default-skin.vjs-big-play-centered(controls='', preload='auto', width='1100', height='700', poster='http://video-js.zencoder.com/oceans-clip.png', data-setup='{"example_option":true}')
+         source(src='videos/#{video.filename}', type='video/mp4')
+         //source(src='videos/15f17eb431bc6c68f8bdc346786ca496.mp4', type='video/mp4')
+         //source(src='http://video-js.zencoder.com/oceans-clip.mp4', type='video/mp4')
+         //source(src='http://video-js.zencoder.com/oceans-clip.webm', type='video/webm')
+         //source(src='http://video-js.zencoder.com/oceans-clip.ogv', type='video/ogg')
+         p.vjs-no-js
+           | To view this video please enable JavaScript, and consider upgrading to a web browser that 
+           a(href='http://videojs.com/html5-video-support/', target='_blank') supports HTML5 video
+      // Video Player End

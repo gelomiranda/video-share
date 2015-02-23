@@ -1,0 +1,31 @@
+extends layout
+
+block content
+ .contents
+  .custom-container
+    .row
+      // Content Column Start
+      .col-lg-9.col-md-12.col-sm-12.col-xs-12.equalcol.contentsection
+        // Contents Section Started
+        .sections
+          h2.heading Upload Video
+          .clearfix
+          form(role='form' method='post', action='/upload')
+            .form-group
+              label Title
+              input#title.form-control(type='text', placeholder='Give it a title')
+            .form-group
+              input#vtags.form-control(type='text', placeholder='Tags' data-role="tagsinput")
+            .form-group
+              label(for='exampleInputFile') File input
+              input(type='file', name='myFile', id='myFile')
+              p.help-block Example block-level help text here.
+            .form-group
+              div.progress
+               div.progress-bar(style='width: 0%;')
+            input.btn.btn-primary.backcolor(type='submit' value="Upload")
+          br
+        .clearfix
+        // Contents Section End
+
+   

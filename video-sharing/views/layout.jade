@@ -1,0 +1,98 @@
+doctype html
+// saved from url=(0028)http://bootswatch.com/lumen/
+html(lang='en')
+  head
+    meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+    meta(charset='utf-8')
+    title Video Site
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    link(rel='stylesheet', href='css/bootstrap.css', media='screen')
+    link(rel='stylesheet', href='css/bootswatch.min.css')
+    link(rel='stylesheet', href='css/bootstrap-tagsinput.css')
+    link(rel='stylesheet', href='css/video-js.css')
+    // HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
+    //if lt IE 9
+      script(src='../bower_components/html5shiv/dist/html5shiv.js')
+      script(src='../bower_components/respond/dest/respond.min.js')
+    script(type='text/javascript', async='', src='/js/ga.js')
+    script.
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-23019901-1']);
+      _gaq.push(['_setDomainName', "bootswatch.com"]);
+      _gaq.push(['_setAllowLinker', true]);
+      _gaq.push(['_trackPageview']);
+      (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+  body
+    .navbar.navbar-default.navbar-fixed-top
+      .container
+        .navbar-header
+          a.navbar-brand(href='/') Video Site
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='#navbar-main')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+        #navbar-main.navbar-collapse.collapse
+          ul.nav.navbar-nav
+            li
+              a(href='upload') Upload
+            li
+              a(href='/') About
+          ul.nav.navbar-nav.navbar-right
+            li
+              a(href='signin') Signin
+            li
+              a(href='https://wrapbootstrap.com/?ref=bsw') Signup
+              
+    .container
+      
+      block content
+      
+      
+      footer
+        .row
+          .col-lg-12
+            ul.list-unstyled
+              li.pull-right
+                a(href='http://bootswatch.com/lumen/#top') Back to top
+              li
+                a(href='http://news.bootswatch.com/', onclick='pageTracker._link(this.href); return false;') Blog
+              li
+                a(href='http://feeds.feedburner.com/bootswatch') RSS
+              li
+                a(href='https://twitter.com/bootswatch') Twitter
+              li
+                a(href='https://github.com/thomaspark/bootswatch/') GitHub
+              li
+                a(href='http://bootswatch.com/help/#api') API
+              li
+                a(href='http://bootswatch.com/help/#support') Support
+            p
+              | Made by 
+              a(href='http://thomaspark.me/', rel='nofollow') Thomas Park
+              | . Contact him at 
+              a(href='mailto:thomas@bootswatch.com') thomas@bootswatch.com
+              | .
+            p
+              | Code released under the 
+              a(href='https://github.com/thomaspark/bootswatch/blob/gh-pages/LICENSE') MIT License
+              | .
+            p
+              | Based on 
+              a(href='http://getbootstrap.com/', rel='nofollow') Bootstrap
+              | . Icons from 
+              a(href='http://fortawesome.github.io/Font-Awesome/', rel='nofollow') Font Awesome
+              | . Web fonts from 
+              a(href='http://www.google.com/webfonts', rel='nofollow') Google
+              | .
+    script(src='js/jquery-1.10.2.min.js')
+    script(src='js/bootstrap.min.js')
+    script(src='js/bootswatch.js')
+    script(src='js/bootstrap-tagsinput.js')
+    //script(src='js/bootstrap-tagsinput-angular.js')
+    script(src='js/video-client.js')
+    script(src='js/upload-client.js')
